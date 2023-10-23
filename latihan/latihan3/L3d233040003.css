@@ -1,0 +1,45 @@
+body{
+    background-image: url(img/background.png);
+    background-repeat: repeat-x;
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+    font-family: Comic Sans MS;
+    color: darkblue;
+    font-size: 60px;
+}
+
+h4{
+    text-align: center;
+}
+
+h3{
+    text-align: center;
+}
+
+.h3plok:hover{
+    color: brown;
+    text-decoration: none;
+}
+
+.p1plok{
+    text-align: center;
+    color: rgb(239, 172, 4);
+}
+
+.p2plok{
+    text-align: right;
+}
+.p2plok a{
+    color: rgb(5, 5, 234);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.p2plok:hover{
+    color: white;
+    background-color: rgb(5, 5, 234);
+}
+
