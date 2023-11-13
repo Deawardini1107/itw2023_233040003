@@ -1,3 +1,8 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -42,83 +47,33 @@ table {
 	border-spacing: 0;
 }
 
-/* style */
-body {
-    font: 16px/28px arial, sans-serif;
-    background-color: #eaeaea;
-    background-image: url(background-color.webp);
-    color: #333;
-}
-
 .container {
-    width: 800px;
+    width: 600px;
+    background-color: white;
     margin: auto;
-    background-color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid #000;
+    margin-top: 10px;
 }
 
 .header {
-    padding: 20px;
-    padding-bottom: 10px;
-}
-
-.header .judul {
-    font-size: 40px;
-    font-weight: bold;
-}
-
-.header ul li {
-    display: inline-block;
-    margin-top: 20px;
-    margin-right: 10px;
-}
-
-.header a {
-    text-decoration: none;
-    color:salmon;
-    padding: 3px;
-}
-
-
-
- .hero {
-    height: 280px;
-    background-image: url(hero.jpg);
-    background-size: cover;
-    background-position: 0 -180px;
-    border-bottom: 5px solid lightblue;
-    border-top: 5px solid salmon;
- }
-
- .content {
-    padding: 20px;
- }
-
-.content h2 {
+    background-color: rgb(71, 71, 71);
+    text-align: center;
+    color: white;
     font-size: 28px;
+    padding: 10px 0;
     font-weight: bold;
 }
 
-.content .penulis {
-    font-size: 11px;
-    margin-top: -5;
-}
-
-.content p {
-    margin-bottom: 20px;
-    font-size: 14px;
-}
-.content .penulis a {
-    color: salmon;
-    text-decoration: none;
+.main {
+    padding: 20px 20px 40px 20px;
 }
 
 .footer {
-    background-color: #333;
-    padding: 10px;
-}
-
-.footer .copy {
-    color: #eaeaea;
+    background-color: black;
+    padding: 3px;
+    color: aliceblue;
     text-align: center;
-    font-size: 12px;
+    font-size: 15px;
+    padding: 10px 0;
 }
