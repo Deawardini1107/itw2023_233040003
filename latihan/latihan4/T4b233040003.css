@@ -46,7 +46,7 @@ table {
 body {
     font: 16px/28px arial, sans-serif;
     background-color: aliceblue;
-    background-image: url(background-color.webp);
+    background-image: url(img/background.webp);
     color: black;
 }
 
@@ -82,9 +82,9 @@ body {
 
  .hero {
     height: 280px;
-    background-image: url(hero.jpg);
+    background-image: url(img/unsplash.jpg);
     background-size: cover;
-    background-position: 0 -180px;
+    background-position: 0 -110px;
     border-bottom: 5px solid lightblue;
     border-top: 5px solid salmon;
  }
@@ -92,8 +92,6 @@ body {
  .content {
     width: 600px;
     padding: 20px;
-    box-sizing: border-box;
-    float: left;
  }
 
 .content h2 {
