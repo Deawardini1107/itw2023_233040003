@@ -84,7 +84,7 @@ body {
     height: 280px;
     background-image: url(img/unsplash.jpg);
     background-size: cover;
-    background-position: 0 -110px;
+    background-position: 0 -50px;
     border-bottom: 5px solid lightblue;
     border-top: 5px solid salmon;
  }
