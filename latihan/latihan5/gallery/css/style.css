@@ -24,7 +24,7 @@ h1 {
   background-color: white;
   margin: auto;
   padding: 30px;
-  box-shadow: 0 0 3px 3px rgb(97, 21, 81);
+  box-shadow: 0 0 3px 3px rgb(172, 34, 142);
   border-radius: 7px;
 }
 
@@ -81,9 +81,9 @@ span {
   height: auto;
   bottom: 0;
   right: 0;
-  background: rgb(234, 145, 107);
+  background: rgb(83, 157, 211);
   text-align: center;
-  padding: 100px;
+  padding: 50px 0;
 }
 
 .overlay img {
@@ -98,7 +98,7 @@ span {
 
 .overlay .close {
   position: absolute;
-  top: 50px;
+  top: 10px;
   left: 50%;
   margin-left: -20px;
   color: white;
@@ -114,19 +114,73 @@ span {
   animation: slideDownFade 0.5s 0.5s forwards;
 }
 
+.overlay:target .next,
+.overlay:target .prev {
+  animation: fadeAjah 0.5s 0.5s forwards;
+}
+
+/* overlay bagian 2 */
+.overlay {
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0);
+  z-index: 9999;
+  transition: 0.3s;
+  text-align: center;
+  padding-top: 50px;
+}
+
 /* navigasi */
 .next,
 .prev {
-  width: 57px;
-  height: 57px;
+  position: absolute;
+  width: 120px;
+  height: 120px;
   background-image: url(../img/next.png);
   text-indent: -99999px;
   top: 40%;
-  margin-left: 50px;
+  margin-left: 20px;
   opacity: 0;
 }
 
 .prev {
   background-image: url(../img/left.png);
-  margin-left: -100px;
+  margin-left: -140px;
+}
+
+@keyframes fadeAjah {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes zoomDanFade {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes slideDownFade {
+  0% {
+    opacity: 0;
+    margin-top: -20px;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 0;
+  }
 }
